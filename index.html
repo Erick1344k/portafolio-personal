@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erick Minda — Desarrollador Frontend</title>
+  <meta name="description" content="Portafolio de Erick Minda, estudiante de Ingeniería en Software especializada en desarrollo frontend." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navegación principal">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">EM</span>
+        Erick Minda 
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-list">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-list" id="nav-list">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="design-system.html">Design System</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="field-note">Guayaquil, Ecuador · Disponible para prácticas</p>
+        <h1>Construyo interfaces claras a partir de problemas reales.</h1>
+        <p class="lead">
+          Soy estudiante de Ingeniería en Software en el octavo semestre, enfocada en
+          desarrollo frontend con bases sólidas de backend. Me interesa el diseño de
+          sistemas, la accesibilidad y escribir código que otras personas puedan mantener.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="proyectos.html">Ver proyectos</a>
+          <a class="btn btn-secondary" href="contacto.html">Escribirme</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div>
+            <dt>6</dt>
+            <dd>Proyectos completados</dd>
+          </div>
+          <div>
+            <dt>3</dt>
+            <dd>Años programando</dd>
+          </div>
+          <div>
+            <dt>2</dt>
+            <dd>Hackathons universitarios</dd>
+          </div>
+        </dl>
+      </div>
+
+      <figure class="hero-art">
+        <svg viewBox="0 0 400 400" role="img" aria-labelledby="hero-art-title">
+          <title id="hero-art-title">Ilustración abstracta de un editor de código con bloques y llaves</title>
+          <rect width="400" height="400" fill="var(--color-surface)" />
+          <g fill="none" stroke="var(--color-border)" stroke-width="1">
+            <line x1="0" y1="80" x2="400" y2="80" />
+            <line x1="0" y1="160" x2="400" y2="160" />
+            <line x1="0" y1="240" x2="400" y2="240" />
+            <line x1="0" y1="320" x2="400" y2="320" />
+          </g>
+          <rect x="40" y="40" width="120" height="24" rx="6" fill="var(--color-primary)" />
+          <rect x="40" y="80" width="200" height="16" rx="4" fill="var(--color-border)" />
+          <rect x="40" y="106" width="260" height="16" rx="4" fill="var(--color-border)" />
+          <rect x="70" y="132" width="180" height="16" rx="4" fill="var(--color-secondary)" />
+          <rect x="40" y="180" width="140" height="16" rx="4" fill="var(--color-border)" />
+          <circle cx="300" cy="260" r="64" fill="none" stroke="var(--color-primary)" stroke-width="3" stroke-dasharray="6 8" />
+          <path d="M270 260 l20 20 l40 -40" fill="none" stroke="var(--color-primary)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+          <text x="40" y="360" class="mono" font-size="14" fill="var(--color-text-muted)">&lt;/&gt; buildingRenata.dev</text>
+        </svg>
+      </figure>
+    </section>
+
+    <section class="section container" aria-labelledby="stack-heading">
+      <div class="section-head">
+        <div>
+          <h2 id="stack-heading">Con qué trabajo ahora mismo</h2>
+          <p class="muted">Un vistazo rápido; la lista completa está en la sección de Skills.</p>
+        </div>
+        <a class="btn btn-secondary btn-sm" href="skills.html">Ver todas las habilidades</a>
+      </div>
+
+      <ul class="grid grid-3">
+        <li class="card">
+          <h3>Frontend</h3>
+          <p class="muted">HTML5 semántico, CSS con arquitectura por tokens, JavaScript y React.</p>
+        </li>
+        <li class="card">
+          <h3>Backend ligero</h3>
+          <p class="muted">Node.js con Express y consumo de APIs REST para dar soporte a mis interfaces.</p>
+        </li>
+        <li class="card">
+          <h3>Herramientas</h3>
+          <p class="muted">Git, Figma para prototipos y Vite como entorno de desarrollo habitual.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section container" aria-labelledby="cta-heading">
+      <div class="card" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+        <div>
+          <h2 id="cta-heading" style="font-size: var(--text-lg);">¿Buscas a alguien para tu equipo?</h2>
+          <p class="muted" style="margin-top: .25rem;">Estoy disponible para prácticas preprofesionales y proyectos freelance pequeños.</p>
+        </div>
+        <a class="btn btn-primary" href="contacto.html">Hablemos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="footer-row">
+      <p class="muted mono">© 2026 Erick Minda</p>
+      <nav class="footer-links" aria-label="Enlaces del pie de página">
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="proyectos.html">Proyectos</a>
+        <a href="design-system.html">Design System</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Volver al inicio de la página">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"></path>
+    </svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
