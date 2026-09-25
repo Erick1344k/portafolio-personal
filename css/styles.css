@@ -1,5 +1,5 @@
 /* =========================================================
-   RENATA SALCEDO — PORTAFOLIO
+  ERICK ADRIAN MINDA GRANJA — PORTAFOLIO
    Sistema de diseño: "Bitácora técnica"
    Un cuaderno de trabajo de desarrolladora: papel cuadriculado,
    tipografía técnica y un único acento de "tinta" azul señal.
@@ -466,9 +466,15 @@ p.lead { font-size: var(--text-md); color: var(--color-text-muted); }
 .swatch-color { height: 5.5rem; }
 .swatch-info { padding: var(--space-xs); background: var(--color-surface); font-family: var(--font-mono); font-size: var(--text-xs); }
 .swatch-info strong { display: block; font-family: var(--font-primary); font-size: var(--text-sm); margin-bottom: 2px; }
+.swatch-info code, .swatch-info small { display: block; font: inherit; }
+.swatch-info small { color: var(--color-text-muted); margin-top: 2px; }
 
 .type-row { display: flex; align-items: baseline; gap: var(--space-md); padding-block: var(--space-sm); border-bottom: 1px dashed var(--color-border); }
 .type-row .mono { width: 6rem; flex-shrink: 0; color: var(--color-text-muted); }
+.type-sample { min-width: 0; font-weight: 600; line-height: 1.15; overflow-wrap: anywhere; }
+.type-sample-h1 { font-size: var(--text-3xl); }
+.type-sample-h2 { font-size: var(--text-2xl); }
+.type-sample-h3 { font-size: var(--text-lg); }
 
 .space-row { display: flex; align-items: center; gap: var(--space-sm); padding-block: var(--space-2xs); }
 .space-bar { background: var(--color-primary); height: 0.9rem; border-radius: 2px; }
@@ -476,11 +482,14 @@ p.lead { font-size: var(--text-md); color: var(--color-text-muted); }
 
 .component-demo { display: flex; flex-wrap: wrap; gap: var(--space-sm); align-items: center; }
 
+.skills-heading { margin-bottom: var(--space-lg); }
+
 /* -------------------- FORMULARIO -------------------- */
 .form-grid { display: grid; gap: var(--space-sm); max-width: 34rem; }
 .form-field { display: flex; flex-direction: column; gap: var(--space-3xs); }
 .form-field label { font-size: var(--text-sm); font-weight: 600; }
 .form-field .hint { font-size: var(--text-xs); color: var(--color-text-muted); }
+.form-hint { font-size: var(--text-xs); }
 .form-field input,
 .form-field textarea {
   border: 1px solid var(--color-border);
@@ -585,4 +594,6 @@ p.lead { font-size: var(--text-md); color: var(--color-text-muted); }
   .hero-stats { flex-wrap: wrap; gap: var(--space-md); }
   h1 { font-size: var(--text-2xl); }
   .section-head { flex-direction: column; align-items: flex-start; }
+  .type-row { align-items: flex-start; flex-direction: column; gap: var(--space-2xs); }
+  .type-sample-h1 { font-size: var(--text-2xl); }
 }

@@ -101,6 +101,8 @@
 })();
 
 (function contactForm() {
+  const CONTACT_EMAIL = 'emindag@unemi.edu.ec';
+
   document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('#contact-form');
     if (!form) return;
@@ -153,10 +155,19 @@
         return;
       }
 
-      status.textContent = `Gracias, ${form.name.value.trim().split(' ')[0]}. Tu mensaje quedó registrado y te responderé pronto a ${form.email.value.trim()}.`;
+      if (!CONTACT_EMAIL) {
+        status.textContent = 'Los datos son válidos, pero falta configurar un correo de destino para poder enviarlos.';
+        status.classList.add('visible');
+        return;
+      }
+
+      const subject = encodeURIComponent(form.elements.subject.value.trim());
+      const body = encodeURIComponent(
+        `Nombre: ${form.elements.name.value.trim()}\nCorreo: ${form.elements.email.value.trim()}\n\n${form.elements.message.value.trim()}`
+      );
+      status.textContent = 'Se abrirá tu aplicación de correo para enviar el mensaje.';
       status.classList.add('visible', 'success');
-      form.reset();
-      fields.forEach((f) => delete f.dataset.touched);
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
     });
   });
 })();
