@@ -1,13 +1,8 @@
-/* =========================================================
-  ERICK ADRIAN MINDA GRANJA — PORTAFOLIO
-   Sistema de diseño: "Bitácora técnica"
-   Un cuaderno de trabajo de desarrolladora: papel cuadriculado,
-   tipografía técnica y un único acento de "tinta" azul señal.
-   ========================================================= */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
-/* -------------------- TOKENS -------------------- */
+
 :root {
   /* Color */
   --color-primary: #2452e0;
